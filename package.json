@@ -1,0 +1,31 @@
+{
+  "name": "voting-server",
+  "version": "1.0.0",
+  "description": "Broadcast Server where i created a simple broadcast server that will allow clients to connect to it, send messages that will be broadcasted to all connected clients.",
+  "keywords": [
+    "Server",
+    "broadcast",
+    "websocket"
+  ],
+  "license": "ISC",
+  "author": "Idongesit Samuel Robson",
+  "type": "commonjs",
+  "main": "voting.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"tsc",
+    "voting-server":"npm run build && node dist/voting.js --",
+    "dev":"ts-node src/voting.ts --"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@types/ws": "^8.18.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "ws": "^8.18.1"
+  },
+  "rootDir":"src"
+}
